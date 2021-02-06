@@ -9,16 +9,31 @@
     label {
         margin-right: 20px;
     }
+    /*Added some color for testing purposes*/
+    .characterChild {
+        background: blue;
+        color: white;
+        margin: 10px;
+    }
+    /*Added some color for testing purposes*/
+    .characterParent {
+        background: green;
+        color: white;
+    }
 </style>
 <head>
     <meta charset="UTF-8">
     <title>Setup</title>
 </head>
+
+<!--jquery script needed for using the functions at the bottom-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 <body style="position:absolute; bottom: 0; top:0; left:0; right:0;" >
 
-<div style="text-align: center;">
+<div class="characterParent" id="characterParent1" style="text-align: center;">
     <form>
-        <div id="characterContainer">
+        <div id="characterContainer" class="characterChild">
             <label for="initiative">
                 Initiative:
                 <input id="initiative" name="character1_init" size="1" type="text" maxlength="3"/>
@@ -46,17 +61,39 @@
 
             <label for="addButton">
                 Add:
-                <button onclick="addCharacter()" id="addButton" name="incrementPartyButton" type="button">+</button>
+                <button id="addButton" name="incrementPartyButton" type="button">+</button>
             </label>
         </div>
     </form>
 </div>
 
+<div class="characterParent" id="parent2" style="text-align: center">
+
+</div>
+
 </body>
 </html>
 
+<!--<script>-->
+<!--    function addCharacterElement() {-->
+<!--        $('.characterChild').clone().appendTo('#parent2');-->
+<!--        down.innerHTML = "Inner DIV is copied"-->
+<!--            + " to another element.";-->
+<!--    }-->
+<!--</script>-->
+
+<!--Used to duplicate the characterChild div above. -->
+<!--TODO: Need to figure out how to ensure the cloned button keeps the on click listener. Right now it does not.-->
 <script>
-    function addCharacter() {
-        alert("Don't click that!");
-    }
+    $(document).ready(function(){
+
+        $('#addButton').click(function(){
+
+            // Create clone of <div class='characterChild'>
+            var newel = $('.characterChild:last').clone();
+
+            // Add after last <div class='characterChild'>
+            $(newel).insertAfter(".characterChild:last");
+        });
+    });
 </script>

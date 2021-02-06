@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="445f8968-bcfc-4e47-899f-6c5d855a4afb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TabletopPlayerStats.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TabletopPlayerStats.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SetupPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SetupPage.html" afterDir="false" />
     </list>
@@ -47,8 +48,13 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,7 +66,11 @@
       <option name="presentableId" value="Default" />
       <updated>1612513857172</updated>
       <workItem from="1612513858469" duration="65000" />
-      <workItem from="1612600366722" duration="89000" />
+      <workItem from="1612600366722" duration="226000" />
+      <workItem from="1612600612934" duration="12000" />
+      <workItem from="1612600690811" duration="11000" />
+      <workItem from="1612643047825" duration="277000" />
+      <workItem from="1612644299814" duration="2650000" />
     </task>
     <servers />
   </component>
