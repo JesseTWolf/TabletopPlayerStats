@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="445f8968-bcfc-4e47-899f-6c5d855a4afb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/TabletopPlayerStats.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SetupPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SetupPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SetupPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612513857172</updated>
       <workItem from="1612513858469" duration="65000" />
+      <workItem from="1612600366722" duration="89000" />
     </task>
     <servers />
   </component>
@@ -79,5 +77,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

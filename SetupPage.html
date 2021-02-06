@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    /*Centering our divs and adding 5% padding above, below and to the sides of each.*/
+    div {
+        padding: 5% 5% 5% 5%
+    }
+    /*Adding a little space between each input box.*/
+    label {
+        margin-right: 20px;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <title>Setup</title>
 </head>
-<body>
+<body style="position:absolute; bottom: 0; top:0; left:0; right:0;" >
 
 <div style="text-align: center;">
     <form>
-        <div>
-            <label for="initiative">Initiative:</label>
-            <input id="initiative" name="character1_init" size="1" type="text" maxlength="3"/>
+        <div id="characterContainer">
+            <label for="initiative">
+                Initiative:
+                <input id="initiative" name="character1_init" size="1" type="text" maxlength="3"/>
+            </label>
 
-            <label for="name">Name:</label>
-            <input id="name" name="character1_name" size="15" type="text"/>
+            <label for="name">
+                Name:
+                <input id="name" name="character1_name" size="15" type="text"/>
+            </label>
 
-            <label for="ac">AC:</label>
-            <input id="ac" name="character1_ac" size="1" type="text" maxlength="3"/>
+            <label for="ac">
+                AC:
+                <input id="ac" name="character1_ac" size="1" type="text" maxlength="3"/>
+            </label>
 
-            <label for="hp">HP:</label>
-            <input id="hp" name="character1_hp" size="1" type="text" maxlength="3"/>
+            <label for="hp">
+                HP:
+                <input id="hp" name="character1_hp" size="1" type="text" maxlength="3"/>
+            </label>
 
-            <label for="playerCheckbox">Player?:</label>
-            <input id="playerCheckbox" name="character1_isPlayer" size="5" type="checkbox"/>
+            <label for="playerCheckbox">
+                Player?:
+                <input id="playerCheckbox" name="character1_isPlayer" size="5" type="checkbox"/>
+            </label>
 
-            <label for="addButton">Add:</label>
-            <button id="addButton" name="incrementPartyButton" size="5" type="button">+</button>
+            <label for="addButton">
+                Add:
+                <button onclick="addCharacter()" id="addButton" name="incrementPartyButton" type="button">+</button>
+            </label>
         </div>
     </form>
 </div>
 
 </body>
 </html>
+
+<script>
+    function addCharacter() {
+        alert("Don't click that!");
+    }
+</script>
