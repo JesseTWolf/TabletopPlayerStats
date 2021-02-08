@@ -1,57 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    /*Centering our divs and adding 5% padding above, below and to the sides of each.*/
-    div {
-        padding: 5% 5% 5% 5%
-    }
-    /*Adding a little space between each input box.*/
-    label {
-        margin-right: 20px;
-    }
-    /*Added some color for testing purposes*/
-    .characterChild {
-        background: blue;
-        color: white;
-        margin: 10px;
-    }
-    /*Added some color for testing purposes*/
-    .characterParent {
-        background: green;
-        color: white;
-    }
-</style>
 <head>
     <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>Setup</title>
-</head>
+    <!-- Looks at the file styles.css for all appropriate styles. -->
+    <link rel="stylesheet" href="styles.css">
 
-<!--jquery script needed for using the functions at the bottom-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--jquery script needed for using the functions used on this page. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
 
 <body style="position:absolute; bottom: 0; top:0; left:0; right:0;" >
 
-<div class="characterParent" id="characterParent1" style="text-align: center;">
+<div class="characterParent" style="text-align: center;">
     <form>
-        <div id="characterContainer" class="characterChild">
+        <div class="characterChild">
             <label for="initiative">
                 Initiative:
-                <input id="initiative" name="character1_init" size="1" type="text" maxlength="3"/>
+                <input class="initiative" name="character_init" size="1" type="text" maxlength="3"/>
             </label>
 
             <label for="name">
                 Name:
-                <input id="name" name="character1_name" size="15" type="text"/>
+                <input class="name" name="character_name" size="15" type="text"/>
             </label>
 
             <label for="ac">
                 AC:
-                <input id="ac" name="character1_ac" size="1" type="text" maxlength="3"/>
+                <input class="ac" name="character_ac" size="1" type="text" maxlength="3"/>
             </label>
 
             <label for="hp">
                 HP:
-                <input id="hp" name="character1_hp" size="1" type="text" maxlength="3"/>
+                <input class="hp" name="character_hp" size="1" type="text" maxlength="3"/>
             </label>
 
             <label for="playerCheckbox">
@@ -61,39 +47,17 @@
 
             <label for="addButton">
                 Add:
-                <button id="addButton" name="incrementPartyButton" type="button">+</button>
+                <button class="addButton" name="incrementPartyButton" type="button">+</button>
             </label>
         </div>
+
+        <input type="submit" name="" id="">
     </form>
 </div>
 
-<div class="characterParent" id="parent2" style="text-align: center">
+ <!-- This will link to the file that has all of the JS scripts in it. -->
+ <script src="main.js"></script>
 
-</div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<!--<script>-->
-<!--    function addCharacterElement() {-->
-<!--        $('.characterChild').clone().appendTo('#parent2');-->
-<!--        down.innerHTML = "Inner DIV is copied"-->
-<!--            + " to another element.";-->
-<!--    }-->
-<!--</script>-->
-
-<!--Used to duplicate the characterChild div above. -->
-<!--TODO: Need to figure out how to ensure the cloned button keeps the on click listener. Right now it does not.-->
-<script>
-    $(document).ready(function(){
-
-        $('#addButton').click(function(){
-
-            // Create clone of <div class='characterChild'>
-            var newel = $('.characterChild:last').clone();
-
-            // Add after last <div class='characterChild'>
-            $(newel).insertAfter(".characterChild:last");
-        });
-    });
-</script>
